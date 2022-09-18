@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+{% block title %}Home Page{% endblock %}
+{% block content %}
+<div class="container">
+    <nav class="navbar navbar-light" style="background-color: #e3f2fd;">
+        <!-- Navbar content -->
+        <h3><span class="badge bg-secondary">New</span></h3>
+    </nav>
+</div>
+
+<div class="container">
+    <h1>Ondřej Martínek</h1>
+</div>
+
+<div class="container">
+    <h2>Things to be here:</h2>
+    <ul>
+        <li>References - Projects I have done</li>
+        <li>Articles about IT</li>
+        <li>Music - band</li>
+    </ul>
+</div>
+<br>
+<div class="container" id="checkboxes">
+    <p>Checkboxes:</p>
+    <form action="/" method="post" >
+    <ul>
+        <li><input type="checkbox" name="first-checkbox" id="first-checkbox" checked></li>
+        <li><input type="checkbox" name="second-checkbox" id="second-checkbox" checked></li>
+        <li><input type="checkbox" name="third-checkbox" id="third-checkbox" ></li>
+    </ul>
+    <input type="submit" value="Submit">
+    </form>
+</div>
+<div>
+    <h3>{{ data }}</h3>
+</div>
+<script src="static/script.js"></script>
+{% endblock %}
