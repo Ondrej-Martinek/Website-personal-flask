@@ -23,7 +23,7 @@
 <br>
 <div class="container" id="checkboxes">
     <p>Checkboxes:</p>
-    <form action="/" method="post" >
+    <form action="{{ url_for('index') }}" method="post" >
     <ul>
         <li><input type="checkbox" name="first-checkbox" id="first-checkbox" checked></li>
         <li><input type="checkbox" name="second-checkbox" id="second-checkbox" checked></li>
